@@ -1,0 +1,64 @@
+$primary-color: #c1121f
+$secondary-color: #ffbe01
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body 
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+    > header, footer 
+        background-color: $primary-color
+        color: black
+        padding: 1rem
+
+    > header 
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+        nav
+            align-self: center
+
+    
+    ul 
+        display: flex
+        list-style-type: none
+        justify-content: space-around
+        gap: 1ch
+
+        li > a
+            color: $secondary-color
+
+    h1
+        color: $secondary-color
+
+    h2
+        color: $primary-color
+
+    > main 
+        flex-grow: 1
+        width: 90vw
+        margin: auto
+        padding: 2rem
+        text-align: center
+
+        p
+            text-align: justify
+            margin-top: 1ch
+            
+
+    > footer 
+        background-color: $primary-color
+        color: $secondary-color
+        text-align: center
+
+
+a
+    text-decoration: none
+    
+    

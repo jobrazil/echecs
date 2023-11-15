@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "parcel": "^2.10.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3"
+  },
+  "name": "demo-parcel-saas",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "build": "parcel build src/*.html --dist-dir build"
+  }
+}

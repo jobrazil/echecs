@@ -1,10 +1,37 @@
 $primary-color: #c1121f
 $secondary-color: #ffbe01
 
+
+/* @media and screen (min-width: 768px) */
+
+
+
+@mixin boutons 
+    background: $primary-color
+    color: $secondary-color
+    border: 1px solid black
+    border-radius: 15px
+    padding: 1ch
+    margin: 0.5ch
+    font-weight: bold
 * 
     box-sizing: border-box
     margin: 0
     padding: 0
+
+.boutons 
+    @include boutons
+
+@media (min-width: 425px) 
+    .boutons
+        background-color: $secondary-color
+        color: $primary-color
+@media (min-width: 768px) 
+    .boutons
+        background-color: green
+        color: blue
+
+
 
 body 
     display: flex
@@ -61,4 +88,6 @@ body
 a
     text-decoration: none
     
+.main-img 
+    width: 100%
     
